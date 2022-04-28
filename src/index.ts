@@ -1,7 +1,16 @@
-const sayHi = (name: string, age: number, gender: string): string => {
-  return `Hello ${name}, you are ${age}, you are a ${gender}!`;
+type Player<T> = {
+  name: string;
+  extraInfo: T;
 };
 
-console.log(sayHi("Nicolas", 24, "male"));
+const young: Player<{ favColor: string }> = {
+  name: "young",
+  extraInfo: {
+    favColor: "yellow",
+  },
+};
 
-export {};
+const lynn: Player<null> = {
+  name: "lynn",
+  extraInfo: null,
+};
