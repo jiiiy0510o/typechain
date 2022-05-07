@@ -2,10 +2,9 @@
   "name": "typechain",
   "version": "1.0.0",
   "description": "Learning Typescript by making a Blockchain with it",
-  "main": "index.js",
   "scripts": {
     "start": "npx tsc-watch --onSuccess \" node dist/index.js\"",
-    "prestart": "tsc"
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
